@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/css/snippetSpaceStyle.css">
+<div id = "snippet-space">
+<div id = "top-bar">
+  <ul id="menu">
+  {{#unless guest}}
+   {{#if create }}
+  <li id ="menu-option"><a href="/snippetspace/">Back to menu</a></li>
+  {{else}}
+  <li id ="menu-option"><a href="/snippetspace/create">New Snippet</a></li>
+   {{/if}}
+  <li id ="menu-option"><a href="/logout">Log out</a></li>
+  {{/unless}}
+  {{#if guest}}
+  {{#if create }}
+  <li id ="menu-option"><a href="/snippetspace/">Back to menu</a></li>
+  <li id ="menu-option"><a href="/">Back to login</a></li>
+  {{else}}
+  <li id ="menu-option"><a href="/">Back to login</a></li>
+  {{/if}}
+  {{/if}}
+
+</ul>
+</div>
+{{#if create }}
+{{> snippetcreate}}
+{{else}}
+<input id="search" autocomplete="off" placeholder="Search">
+<div id = "list-space">
+<div id = "snippet-list">
+<ul>
+{{#each ownedsnippet}}
+<a href = "/snippetspace/view/?id={{this.id}}"><li id = "snippet" class = "noselect"><img src ="/images/snippetico.png" width="50" height="50"><b>{{this.title}}</b></li></a>
+{{/each}}
+{{#each snippet}}
+<a href = "/snippetspace/view/?id={{this.id}}"><li id = "snippet" class = "noselect"><img src ="/images/snippetico.png" width="50" height="50">{{this.title}} <b> by {{this.author}} </b></li></a>
+{{/each}}
+</ul>
+<script>
+  var search = document.getElementById("search");
+    search.addEventListener("keyup", () => {
+    var snippets = document.getElementsByClassName("noselect"); 
+    var filter = search.value; 
+    for(var i = 0; i<snippets.length; i++){
+      if(snippets[i].textContent.toLowerCase().includes(filter.toLowerCase())){ 
+        snippets[i].style.display = "";
+        snippets[i].parentElement.style.display = ""
+      }else{
+        snippets[i].style.display = "none";
+        snippets[i].parentElement.style.display = "none";
+      }
+    }
+    });
+</script>
+</div>
+</div>
+{{/if}}
+</div>

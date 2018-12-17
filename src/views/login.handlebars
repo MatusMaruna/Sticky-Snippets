@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/css/loginStyle.css">
+<div id='login'>
+    <div id='login-form'>
+    <form method='post' class='login-form'>
+    <img src="images/logo.png"style="width:100px;height:100px;" class="noselect">
+    <h1 class="noselect">Sticky-Snippets</h1>
+    <label for="username" class="noselect"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" autocomplete="off">
+
+    <label for="password"class="noselect"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" >
+
+    <button type="submit" formaction="/login">Login</button>
+    <button type="submit" formaction="/register">Sign up</button>
+    </form>
+   </div>
+   <form>
+   <button class="guestmode" type="submit" formaction="/snippetspace">Guest Mode</button>
+   </form>
+</div>

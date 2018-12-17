@@ -1,0 +1,121 @@
+#snippet-space{
+    background: rgba(128,128,128,0.5);
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+}
+#top-bar{
+    padding: 8px;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    z-index: 100000;
+    position: absolute;
+    width: 100%;
+    font-family: 'Exo-Regular';
+}
+#menu-option {
+    display: inline-block;
+  }
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:98%;
+    top:0;
+    position: absolute;
+    background-color: rgb(119, 118, 118);
+    border-radius:0px 0px 10px 10px;
+  }
+#menu-option a {
+    display: block;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    padding: 16px 17px;
+    text-decoration: none;
+  }
+#menu-option a:hover {
+    background-color: rgb(2, 233, 52);
+  }
+#menu-option:last-child {
+    float:right;
+  }
+#list-space {
+    background-color:rgba(255, 255, 255, 0.3);
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+}
+#snippet-create{
+    z-index: 1000000;
+    position: absolute;
+    bottom: 83%;
+    left: 23%;
+}
+#snippet-list{
+    height: 80%;
+    width: 94%;
+    position: absolute;
+    border-radius: 10px;
+    overflow:auto;
+    top: 12%;
+    right: 4%;
+}
+#snippet-list li{
+    list-style-type: none;
+}
+#snippet {
+    width:98%;
+    height:15%;
+    font-family: 'Exo-Regular';
+    font-size: 35px;
+    border-radius: 10px;
+    background-color:rgb(175, 170, 170, 0.3);
+    margin-bottom: 5px;
+}
+#snippet:hover{
+    background-color:green;
+}
+.noselect {
+    user-select: none;
+    -moz-user-select: none;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  img{
+    position: relative;
+    top: 10px;
+  }
+  #search{
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  width: 300px;
+  font-family: 'Exo-Regular';
+  padding: 12px 20px;
+  font-size:16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  }
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f7f5f5; 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color:rgba(122,122,122);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(92, 90, 90); 
+}

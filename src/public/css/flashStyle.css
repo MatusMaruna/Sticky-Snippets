@@ -1,0 +1,26 @@
+.alert {
+    padding: 20px;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    z-index: 100000;
+    position: absolute;
+    width: 97%;
+    font-family: 'Exo-Regular';
+  }
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    z-index: 100000;
+  }
+  #fail{
+    background-color: #f72f21;
+  }
+  #success{
+    background-color: #1dda36
+  }

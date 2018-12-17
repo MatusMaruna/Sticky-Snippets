@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="/css/flashStyle.css">
+
+{{#if flash }}
+    <div class="alert" id="{{flash.type}}">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        {{{flash.message}}}
+    </div>
+{{/if}}

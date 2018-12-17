@@ -1,0 +1,17 @@
+html {
+    background:url("../images/wallpaper.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+html, body {
+    overflow:hidden;
+    height:100%;
+  }
+  @font-face{
+    font-family: 'Exo-Regular';
+    src: url("../fonts/Exo-Regular.ttf");
+}
+h1{
+    font-family: 'Exo-Regular';
+}

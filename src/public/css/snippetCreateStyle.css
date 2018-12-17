@@ -1,0 +1,49 @@
+#snippet-create{
+    z-index: 1000000;
+    position: absolute;
+    bottom: 83%;
+    left: 23%;
+    
+}
+#editor { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 1000px;
+    height: 500px;
+    border-radius:10px; 
+}
+button {
+position: absolute;
+top: 527px;
+left: 696px;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 20px 0;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+width: 300px;
+display:block;
+font-family: 'Exo-Regular';
+}
+input{
+top: -60px;
+position: absolute;
+width: 300px;
+font-family: 'Exo-Regular';
+padding: 12px 20px;
+margin: 8px 0;
+font-size:16px;
+border-radius: 8px;
+display: block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+.delete{
+background-color: red;
+top: 585px;
+}

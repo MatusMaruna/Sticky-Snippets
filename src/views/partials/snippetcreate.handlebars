@@ -1,0 +1,36 @@
+<div id="snippet-create">
+    <link rel="stylesheet" href="/css/snippetCreateStyle.css">
+    <form method='post' class='login-form'>
+    {{#if edit}}
+    <input type="text" id="snippet-title" placeholder="{{savetitle}}" name="title" autocomplete="off"></input>
+    {{else}}
+    <input type="text" placeholder="Enter title of snippet" name="title" autocomplete="off"></input>
+    {{/if}}
+    <textarea id="editor-save" name="save" style="display: none;">{{savecontent}}</textarea>
+    <div id="editor">{{savecontent}}</div>
+<script src="/ace-editor/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/iplastic");
+    editor.session.setMode("ace/mode/javascript");
+    var textarea = document.getElementById("editor-save");
+    editor.session.on("change", () =>{
+        textarea.textContent = (editor.session.getValue());
+    });
+    {{#if edit}}
+    var title = document.getElementById("snippet-title");
+    title.value = title.getAttribute("placeholder");
+    {{/if}}
+</script>
+    {{#unless view}}
+    {{#unless guest}}
+    {{#if edit}}
+    <button type="submit" formaction="/snippetspace/edit">Submit Edit</button>
+    <button class="delete" type="submit" formaction="/snippetspace/delete">Delete snippet</button>
+    {{else}}
+    <button type="submit" formaction="/snippetspace/create/submit">Create snippet</button>
+    {{/if}}
+    {{/unless}}
+    {{/unless}}
+    </form>
+</div>

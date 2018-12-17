@@ -1,0 +1,67 @@
+#login{
+   
+  background: rgba(128,128,128,0.5);
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:1000;
+}
+
+h1{
+  font-family: 'Exo-Regular';
+  position: absolute;
+  display: inline-block;
+  bottom: 300px;
+  left: 70px;
+}
+.noselect {
+  user-select: none;
+  -moz-user-select: none;
+}
+
+input{
+  width: 300px;
+  font-family: 'Exo-Regular';
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size:16px;
+  border-radius: 8px;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+#login-form{
+  position: relative;
+  left: 40.2%;
+  top: 35%;
+  }
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 300px;
+  display:block;
+  font-family: 'Exo-Regular';
+  }
+img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 293px;
+  left: -35px;
+  }
+label{
+  font-family: 'Exo-Regular';
+  }
+.guestmode{
+  position: absolute;
+  top: 93%;
+  right: 1%;
+  background-color: grey; 
+}
